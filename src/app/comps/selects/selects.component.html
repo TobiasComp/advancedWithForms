@@ -1,0 +1,24 @@
+<p>selects works!</p>
+
+
+<form [formGroup]="personFormGroup" (ngSubmit)="setGroupForm()">
+    <label>FirstName: <input formControlName="firstName"></label><br>
+    <label>LastName: <input formControlName="lastName"></label><br>
+    <label>age: <input formControlName="age"></label><br>
+    
+    <div formGroupName="address">
+        <label>country: 
+        <select (change)="getCities($event.target.value) "formControlName="country" >
+            <option value="{{country}}" *ngFor="let country of getCountries()">{{country}}</option><br>
+        </select></label>
+        <label>city: <select formControlName="city" >
+                <option value="{{city}}" *ngFor="let city of citiesByCountries">{{city}}</option><br>
+            </select></label><br>
+        <label>street: <input formControlName="street"></label><br>
+        <label>zipcode: <input formControlName="zipcode"></label><br>
+   
+    <button>Submit</button>
+    <button type="reset">Reset</button>
+</div>
+</form>
+
