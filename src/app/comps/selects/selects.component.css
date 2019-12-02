@@ -1,0 +1,15 @@
+.ng-valid {
+    color: green;
+}
+.ng-invalid {
+    color: red;
+}
+.ng-pending {
+    border: 1px solid orange;
+}
+.ng-pristine{
+    
+}
+.ng-dirty
+.ng-untouched
+.ng-touched
