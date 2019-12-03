@@ -34,7 +34,7 @@ export class SelectsComponent implements OnInit {
   personFormGroup =  this.fb.group({
       firstName: ['', Validators.required],
       lastName:  ['', Validators.required],
-      age:       ['', Validators.min(18)],
+      age:       ['', [Validators.required,Validators.min(18)] ],
       address: this.fb.group({
           country: [''],
           city:    [''],
@@ -64,6 +64,6 @@ export class SelectsComponent implements OnInit {
   getCities(country:string){
     this.citiesByCountries = this.countriesAndCities.find(x=>x.country==country).cities
     console.log(this.citiesByCountries);
+    }
   }
-}
 

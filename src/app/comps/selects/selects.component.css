@@ -10,6 +10,6 @@
 .ng-pristine{
     
 }
-.ng-dirty
-.ng-untouched
-.ng-touched
+.ng-dirty{}
+.ng-untouched{}
+.ng-touched{}

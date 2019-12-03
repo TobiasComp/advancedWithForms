@@ -1,0 +1,6 @@
+<table border="2">
+    <tr  *ngFor="let item  of [].constructor(10); index as i">
+        <td class="item" appInvisible appHighlight *ngFor="let item1  of [].constructor(10); index as j">{{i*j}}</td>
+    </tr>
+</table>
+<button type="button" (click)="showTable()">Reset</button>

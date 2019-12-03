@@ -1,0 +1,16 @@
+<h3>This is an example of a year pipe</h3>
+<ul>
+    <li *ngFor="let by of birthYearArray" >
+        {{ by | birthYear }}
+    </li>
+</ul>
+<h3>This is an example of a capitalize pipe</h3>
+<ul>
+    <li *ngFor="let str of stringArray" >
+        {{ str | capitalize }}
+    </li>
+</ul>
+<h3>This is an example of a filter pipe</h3>
+<ul>
+    <span> {{ stringArray | filter:2 | addAstringArray}}</span>
+</ul>

@@ -7,14 +7,17 @@ import { CanActivateIceCreamLinkService } from './services/guards/can-activate-i
 import { JsonUserComponent } from './comps/json-user/json-user.component';
 import { LoginComponent } from './comps/login/login.component';
 import { AmericansComponent } from './comps/americans/americans.component';
-import { NativeComponent } from './comps/Americans/native/native.component';
-import { BlacksComponent } from './comps/Americans/blacks/blacks.component';
-import { ImmigrantsComponent } from './comps/Americans/immigrants/immigrants.component';
+import { NativeComponent } from './comps/americans/native/native.component';
+import { BlacksComponent } from './comps/americans/blacks/blacks.component';
+import { ImmigrantsComponent } from './comps/americans/immigrants/immigrants.component';
 import { ReactiveformsComponent } from './comps/reactiveforms/reactiveforms.component';
 import { ReactiveFormGroupsComponent } from './comps/reactive-form-groups/reactive-form-groups.component';
 import { RoutesComponent } from './comps/routes/routes.component';
 import { FormsNavComponent } from './comps/forms-nav/forms-nav.component';
 import { SelectsComponent } from './comps/selects/selects.component';
+import { CompsformArrayComponent } from './compsform-array/compsform-array.component';
+import { PipeComponent } from './comps/pipe/pipe.component';
+import { DirectiveComponent } from './comps/directive/directive.component';
 
 const routes: Routes = [
   { path: 'routes', component:RoutesComponent,children:[
@@ -34,7 +37,11 @@ const routes: Routes = [
       { path: 'forms', component:ReactiveformsComponent, },
       { path: 'formgroup', component:ReactiveFormGroupsComponent, },
       { path: 'formselect', component:SelectsComponent, },
+      { path: 'formarray', component:CompsformArrayComponent, },
+
   ] },
+  { path: 'pipes', component:PipeComponent},
+  { path: 'directives', component:DirectiveComponent},
   { path: '', redirectTo:'/', pathMatch:'full'},
   { path: '**', redirectTo:'/', pathMatch:'full'},
  
