@@ -17,7 +17,7 @@ export class InvisibleDirective {
   }
   
   private visible(show: string) {
-    console.log("visible",show);
+    // console.log("visible",show);
     if (!show)
       this.el.nativeElement.style.visibility = "hidden";
     else

@@ -18,6 +18,7 @@ import { SelectsComponent } from './comps/selects/selects.component';
 import { CompsformArrayComponent } from './compsform-array/compsform-array.component';
 import { PipeComponent } from './comps/pipe/pipe.component';
 import { DirectiveComponent } from './comps/directive/directive.component';
+import { MaterialComponent } from './comps/material/material.component';
 
 const routes: Routes = [
   { path: 'routes', component:RoutesComponent,children:[
@@ -42,6 +43,7 @@ const routes: Routes = [
   ] },
   { path: 'pipes', component:PipeComponent},
   { path: 'directives', component:DirectiveComponent},
+  { path: 'material', component:MaterialComponent },
   { path: '', redirectTo:'/', pathMatch:'full'},
   { path: '**', redirectTo:'/', pathMatch:'full'},
  

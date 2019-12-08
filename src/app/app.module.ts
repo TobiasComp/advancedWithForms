@@ -29,8 +29,19 @@ import { AddAstringArrayPipe } from './comps/pipes/add-astring-array.pipe';
 import { HighlightDirective } from './comps/directives/highlight.directive';
 import { DirectiveComponent } from './comps/directive/directive.component';
 import { InvisibleDirective } from './comps/directives/invisible.directive';
-
-
+import { ToIsraeliDatePipe } from './comps/pipes/to-israeli-date.pipe';
+import { AllCapitalPipe } from './comps/pipes/all-capital.pipe';
+import { UnCapitalPipe } from './comps/pipes/un-capital.pipe';
+import { FilterTermPipe } from './comps/pipes/filter-term.pipe';
+import { EnlargeDirective } from './comps/directives/enlarge.directive';
+import { CloudDirective } from './comps/directives/cloud.directive';
+import { LoggerDirective } from './comps/directives/logger.directive';
+import { LoggerValueDirective } from './comps/directives/logger-value.directive';
+import { BluryDirective } from './comps/directives/blury.directive';
+import { MaterialComponent } from './comps/material/material.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatModule } from './module/mat.module';
+import { OnContentCheckedDirective } from './comps/directives/on-content-checked.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +69,17 @@ import { InvisibleDirective } from './comps/directives/invisible.directive';
     HighlightDirective,
     DirectiveComponent,
     InvisibleDirective,
+    ToIsraeliDatePipe,
+    AllCapitalPipe,
+    UnCapitalPipe,
+    FilterTermPipe,
+    EnlargeDirective,
+    CloudDirective,
+    LoggerDirective,
+    LoggerValueDirective,
+    BluryDirective,
+    MaterialComponent,
+    OnContentCheckedDirective
     
   ],
   imports: [
@@ -65,7 +87,9 @@ import { InvisibleDirective } from './comps/directives/invisible.directive';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatModule
   ],
   providers: [],
   bootstrap: [AppComponent]

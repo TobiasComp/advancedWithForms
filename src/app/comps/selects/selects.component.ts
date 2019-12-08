@@ -53,8 +53,6 @@ export class SelectsComponent implements OnInit {
     console.log(person);
     console.log(this.personFormGroup);
     console.log(this.personFormGroup.status);
-    
-    
   }
 
   getCountries(){

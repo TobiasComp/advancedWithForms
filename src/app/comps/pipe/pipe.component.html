@@ -14,3 +14,23 @@
 <ul>
     <span> {{ stringArray | filter:2 | addAstringArray}}</span>
 </ul>
+<h3>This is an example of a date pipe</h3>
+<ul>
+    <span> {{ "" | toIsraeliDate}}</span>
+</ul>
+<h3>This is an example of a allCAPS pipe</h3>
+<ul>
+    <li *ngFor="let str of stringArray" >
+        {{ str | allCapital }}
+    </li>
+</ul>
+<h3>This is an example of a uncaps pipe</h3>
+<ul>
+    <li *ngFor="let str of stringArray" >
+        {{ str | unCapital }}
+    </li>
+</ul>
+<h3>This is an example of a filter pipe acording to a term</h3>
+<ul>
+    <span> {{ stringArray | filterTerm:"is" }}</span>
+</ul>

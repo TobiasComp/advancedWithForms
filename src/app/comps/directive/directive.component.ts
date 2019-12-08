@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directive.component.css']
 })
 export class DirectiveComponent implements OnInit {
-
+  tiktak:string
   constructor() { }
 
   ngOnInit() {
@@ -16,9 +16,6 @@ export class DirectiveComponent implements OnInit {
     let cells = document.querySelectorAll('.item');
     cells.forEach(cell => (cell as HTMLElement).style.visibility="visible");
 
-    /*for (let i = 0; i < cells.length; i++) {
-      const element = cells[i] as HTMLElement;
-      element.style.visibility = "visible"
-    }*/
+    
   }
 }

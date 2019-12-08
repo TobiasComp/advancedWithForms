@@ -4,3 +4,18 @@
     </tr>
 </table>
 <button type="button" (click)="showTable()">Reset</button>
+<p>Enlarge</p>
+<table border="4">
+    <tr  *ngFor="let item  of [].constructor(3); index as i">
+        <td class="item" appEnlarge *ngFor="let item1  of [].constructor(3); index as j">{{i*j}}</td>
+    </tr>
+</table>
+<ul>
+    <li appCloud>Cloud</li>
+    <li appLogger>Logger</li>
+</ul>
+<input type="text" appBlury><br><br>
+<input type="text" [(ngModel)]="tiktak">
+<div appOnContentChecked>
+    {{tiktak}}
+</div>
